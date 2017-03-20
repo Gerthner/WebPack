@@ -87,7 +87,8 @@ module.exports = {
                 exclude: /(node_modules|bower_components)/,
                 loaders: ['file-loader?'+((DEVELOPMENT===true)
                     ? 'name=images/[name].[ext]'
-                    : 'name=[ext]-[hash:8].[ext]')]
+                    : 'name=[ext]-[hash:8].[ext]'),
+                	'image-webpack-loader']
             }
         ]
     },
